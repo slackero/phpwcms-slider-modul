@@ -34,5 +34,3 @@ $_module_contentpart	= true;
 $_module_fe_render		= false;
 $_module_fe_init		= false;
 $_module_fe_search		= false;
-
-?>

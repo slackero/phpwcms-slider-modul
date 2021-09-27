@@ -151,7 +151,7 @@ the CP was last saved, but this could have changed since
                              "thumb_name" => md5($v['f_hash'] .
                                  $mod_sliderjs['br_sliderjs']['jqs_imgwidth'] .
                                  $mod_sliderjs['br_sliderjs']['jqs_imgheight'] .
-                                 $phpwcms["sharpen_level"] . '1'),
+                                 $phpwcms["sharpen_level"] . $phpwcms['colorspace'] . '1'),
                              "crop_image" => 1
                         )
                     );
@@ -185,4 +185,3 @@ the CP was last saved, but this could have changed since
 
 //cleanup
 unset($mod_sliderjs);
-?>

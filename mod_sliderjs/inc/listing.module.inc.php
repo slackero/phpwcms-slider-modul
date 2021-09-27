@@ -20,9 +20,7 @@ if (!defined('PHPWCMS_ROOT')) {
 $mod_jqs->jqs_get_articles();
 
 ?>
-
 <div></div>
-
 
 <!-- overwiev cp's -->
 <div id="br_module_body">
@@ -57,8 +55,7 @@ $mod_jqs->jqs_get_articles();
                                 <img src="<?php echo $mod_jqs->getModImgPath() ?>public_11x11a_<?php echo $row["artdata"]["acat_public"] ?>.gif" alt="public" />
                             </td>
                             <td style="width:70%;"><?php
-							
-							
+
                                 $plugin['br_sliderjs']['jslib'] = explode('-', $mod_jqs->plugin_jslib[$row["acontent_id"]]);
                                 $plugin['br_sliderjs']['jslibwarning'] = "";
                                 if (stripos($mod_jqs->plugin_jslib[$row["acontent_id"]], 'jquery') !== false) {
@@ -69,8 +66,7 @@ $mod_jqs->jqs_get_articles();
                                 } else {
                                     echo '<img src="' . $mod_jqs->getModImgPath() . 'visible_11x11a_9.gif" alt="" /><span style="color:#F00;">' . $mod_jqs->plugin_jslib[$row["acontent_id"]] . '</span>';
                                 }
-								
-								
+
                                 ?></td>
                         </tr>
                         <tr title="structure">

@@ -15,5 +15,3 @@
 if (!defined('PHPWCMS_ROOT')) {
     die("You Cannot Access This Script Directly, Have a Nice Day.");
 }
-
-?>

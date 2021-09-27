@@ -17,5 +17,3 @@ if (!defined('PHPWCMS_ROOT')) {
 }
 
 // try
-
-?>

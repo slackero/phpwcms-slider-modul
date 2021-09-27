@@ -96,8 +96,9 @@ if ( $action == 'openfolder' ) {
                  "max_height" => $phpwcms['img_list_height'],
                  "thumb_name" => md5($val['f_hash'] .
                      $phpwcms['img_list_width'] .
-                     $phpwcms['img_list_height'] .
-                     $phpwcms["sharpen_level"])
+                     $phpwcms['img_list_height'] . 
+                     $phpwcms["sharpen_level"] . 
+                     $phpwcms['colorspace'])
             )
         );
 
@@ -141,6 +142,3 @@ if ( $action == 'openfolder' ) {
   }
 
   echo $return_output;
-
-//cleanup
-?>

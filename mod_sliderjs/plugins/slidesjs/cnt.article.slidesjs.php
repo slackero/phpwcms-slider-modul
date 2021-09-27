@@ -32,7 +32,7 @@ foreach ($mod_sliderjs['br_sliderjs']['data'] as $key => $value) {
 //            $mod_sliderjs['br_sliderjs']['imglist'] .= 'title="' . $value['jqs_descr'] . '" alt="' . $value['jqs_title'] . '"';
 //        }
         //$mod_sliderjs['br_sliderjs']['imglist'] .= $value['jqs_image'][3].' alt="'.$img_desc.'" border="0" />'.LF;
-        $mod_sliderjs['br_sliderjs']['imglist'] .= ' />' . LF;
+        $mod_sliderjs['br_sliderjs']['imglist'] .= PHPWCMS_LAZY_LOADING.HTML_TAG_CLOSE . LF;
     }
 }
 

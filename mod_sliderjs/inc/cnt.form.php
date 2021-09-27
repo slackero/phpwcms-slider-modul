@@ -334,4 +334,3 @@ jQuery(document).ready(function() {
 });
 </script>' . LF;
 unset($mod_sliderjs, $mod_sliderjs_slidesjs, $mod_sliderjs_nivo, $mod_sliderjs_bxslider);
-?>

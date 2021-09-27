@@ -35,7 +35,7 @@ foreach ($mod_sliderjs['br_sliderjs']['data'] as $key => $value) {
             if ( isset($content['br_sliderjs']['nivo']['jqs_thumbnav']) && $content['br_sliderjs']['nivo']['jqs_thumbnav'] == 1){
                 $mod_sliderjs['br_sliderjs']['imglist'] .= 'data-thumb="' . PHPWCMS_IMAGES . $value['jqs_image'][0] . '"';
             }
-            $mod_sliderjs['br_sliderjs']['imglist'] .= ' />' . LF;
+            $mod_sliderjs['br_sliderjs']['imglist'] .= PHPWCMS_LAZY_LOADING.HTML_TAG_CLOSE . LF;
             if ( !empty($value['jqs_css']) ) {
                 $mod_sliderjs['br_sliderjs']['caplist'] .= '<div id="'.$value['f_hash'].'" class="nivo-html-caption">';
                 $mod_sliderjs['br_sliderjs']['caplist'] .= '<div class="'.clean_replacement_tags($value['jqs_css']).'">'.$value['jqs_descr'].'</div></div>' . LF;
